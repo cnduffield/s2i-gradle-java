@@ -1,6 +1,7 @@
 FROM openshift/base-centos7
 
-MAINTAINER Tobias Brunner <tobias.brunner@vshn.ch>
+MAINTAINER Tobias Brunner <tobias.brunner@vshn.ch> 
+#Modified by Chris Duffield <cnduffield@hotmail.com>
 
 ENV GRADLE_VERSION=5.6.2
 
