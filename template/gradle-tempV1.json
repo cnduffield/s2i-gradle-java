@@ -6,7 +6,7 @@
       "namespace": "openshift"
    },
    "spec": {
-"dockerImageRepository": "docker.io/cnduffield/s2i-gradle",
+"dockerImageRepository": "docker.io/cnduffield/gradles2iv1",
       "tags": [
          {
             "name": "latest",
