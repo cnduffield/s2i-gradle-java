@@ -2,7 +2,7 @@ FROM openshift/base-centos7
 
 MAINTAINER Tobias Brunner <tobias.brunner@vshn.ch>
 
-ENV GRADLE_VERSION=4.0.1
+ENV GRADLE_VERSION=5.6.2
 
 # Docker Image Metadata
 LABEL io.k8s.description="Platform for building (Gradle) and running plain Java applications" \
