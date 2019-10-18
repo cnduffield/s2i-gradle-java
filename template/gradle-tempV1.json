@@ -13,8 +13,8 @@
             "annotations": {
                "description": "Java Gradle OpenJDK S2I image",
                "iconClass": "icon-jboss",
-               "tags": "builder,java,maven,gradle,springboot,vertx,widlfly-swarm,dropwizard,microservices,fatjar",
-               "supports": "java:8,maven:3,gradle:2.6",
+               "tags": "builder,java,gradle,springboot,dropwizard,microservices,fatjar",
+               "supports": "java:8,gradle:5.6",
                "sampleRepo": "https://github.com/cnduffield/gradlespring.git",
                "version": "latest"
             }
