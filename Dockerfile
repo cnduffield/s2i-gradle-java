@@ -1,4 +1,4 @@
-FROM openshift/base-centos7
+FROM registry.redhat.io/ubi8/ubi
 
 MAINTAINER Tobias Brunner <tobias.brunner@vshn.ch> 
 #Modified by Chris Duffield <cnduffield@hotmail.com>
