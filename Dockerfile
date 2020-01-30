@@ -1,4 +1,4 @@
-FROM registry.redhat.com/ubi8/ubi
+FROM registry.access.redhat.com/ubi8/ubi
 
 MAINTAINER Tobias Brunner <tobias.brunner@vshn.ch> 
 #Modified by Chris Duffield <cnduffield@hotmail.com>
