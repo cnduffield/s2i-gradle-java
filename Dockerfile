@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi-init
+FROM registry.access.redhat.com/ubi8/ubi
 
 MAINTAINER Tobias Brunner <tobias.brunner@vshn.ch> 
 #Modified by Chris Duffield <cnduffield@hotmail.com>
@@ -16,6 +16,9 @@ LABEL io.k8s.description="Platform for building (Gradle) and running plain Java 
 #RUN  yum update \
 #  && yum install -y wget \
 #  && yum clean all -y
+RUN yum -y upgrade
+RUN yum -y install wget
+RUN yum -y clean all
 
 # Install Java
 #RUN INSTALL_PKGS="java-1.8.0-openjdk java-1.8.0-openjdk-devel" && \
