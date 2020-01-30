@@ -45,6 +45,8 @@ RUN wget https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.
 
 # S2I scripts
 COPY ./s2i/bin/ /usr/libexec/s2i
+#mkdir
+RUN mkdir -p /opt/app-root
 
 RUN chown -R 1001:1001 /opt/app-root
 USER 1001
