@@ -11,6 +11,11 @@ LABEL io.k8s.description="Platform for building (Gradle) and running plain Java 
       io.openshift.tags="builder,java,gradle" \
       io.openshift.expose-services="8080" \
       org.jboss.deployments-dir="/deployments"
+     
+#Install WGET
+RUN  yum update \
+  && yum install -y wget \
+  && yum clean all -y
 
 # Install Java
 #RUN INSTALL_PKGS="java-1.8.0-openjdk java-1.8.0-openjdk-devel" && \
