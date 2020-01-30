@@ -6,7 +6,7 @@
       "namespace": "openshift"
    },
    "spec": {
-"dockerImageRepository": "https://quay.io/repository/cduffiel/myrepo",
+"dockerImageRepository": "quay.io/repository/cduffiel/myrepo",
       "tags": [
          {
             "name": "ubi",
