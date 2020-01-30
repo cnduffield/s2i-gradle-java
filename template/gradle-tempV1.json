@@ -6,17 +6,17 @@
       "namespace": "openshift"
    },
    "spec": {
-"dockerImageRepository": "docker.io/cnduffield/gradles2iv1",
+"dockerImageRepository": "https://quay.io/repository/cduffiel/myrepo",
       "tags": [
          {
-            "name": "latest",
+            "name": "ubi",
             "annotations": {
                "description": "Java Gradle OpenJDK S2I image",
                "iconClass": "icon-jboss",
                "tags": "builder,java,gradle,springboot,dropwizard,microservices,fatjar",
                "supports": "java:8,gradle:5.6",
                "sampleRepo": "https://github.com/cnduffield/gradlespring.git",
-               "version": "latest"
+               "version": "ubi"
             }
          }
       ]
