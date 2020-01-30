@@ -20,6 +20,10 @@ RUN yum -y upgrade
 RUN yum -y install wget
 RUN yum -y clean all
 
+#install unzip
+RUN yum -y install unzip
+RUN yum -y clean all
+
 # Install Java
 #RUN INSTALL_PKGS="java-1.8.0-openjdk java-1.8.0-openjdk-devel" && \
 RUN INSTALL_PKGS="java-11-openjdk java-11-openjdk-devel" && \
@@ -29,6 +33,7 @@ RUN INSTALL_PKGS="java-11-openjdk java-11-openjdk-devel" && \
     mkdir -p /opt/s2i/destination
 
 # Install Gradle
+#https://services.gradle.org/distributions/gradle-5.6.4-bin.zip
 RUN wget https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip && \
     mkdir /opt/gradle && \
     unzip -d /opt/gradle gradle-${GRADLE_VERSION}-bin.zip && \
